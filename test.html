@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body, html { margin: 0; padding: 0; overflow: hidden; background: #faf9f6; }
+        #organic-canvas {
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: -1; /* Keeps it behind your content */
+            width: 100vw;
+            height: 100vh;
+        }
+    </style>
+</head>
+<body>
+
+    <canvas id="organic-canvas"></canvas>
+
+    <script>
+        const canvas = document.getElementById('organic-canvas');
+        const ctx = canvas.getContext('2d');
+
+        function resize() {
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+            drawOrganicLines();
+        }
+
+        function drawOrganicLines() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            
+            // Settings for subtlety
+            const lineCount = 8; 
+            const strokeColor = 'rgba(0, 0, 0, 0.04)'; // Very light grey/black
+            ctx.strokeStyle = strokeColor;
+            ctx.lineWidth = 40; // Thick "noodle" style like your first image
+            ctx.lineCap = 'round';
+
+            for (let i = 0; i < lineCount; i++) {
+                drawRandomPath();
+            }
+        }
+
+        function drawRandomPath() {
+            ctx.beginPath();
+            
+            // Start at a random spot off-screen or near the edge
+            let x = Math.random() * canvas.width;
+            let y = Math.random() * canvas.height;
+            ctx.moveTo(x, y);
+
+            // Create a path with 5-8 random "wiggle" points
+            const segments = 6;
+            for (let i = 0; i < segments; i++) {
+                const cx = x + (Math.random() - 0.5) * 600; // Control point X
+                const cy = y + (Math.random() - 0.5) * 600; // Control point Y
+                const nx = x + (Math.random() - 0.5) * 400; // Next point X
+                const ny = y + (Math.random() - 0.5) * 400; // Next point Y
+                
+                ctx.quadraticCurveTo(cx, cy, nx, ny);
+                
+                x = nx;
+                y = ny;
+            }
+            ctx.stroke();
+        }
+
+        window.addEventListener('resize', resize);
+        resize();
+    </script>
+</body>
+</html>
