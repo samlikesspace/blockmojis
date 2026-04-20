@@ -16,7 +16,7 @@ body {
 }
 
 .logo {
--webkit-box-shadow:0px 0px 105px 24px rgba(45,255,196,0.9);
--moz-box-shadow: 0px 0px 105px 24px rgba(45,255,196,0.9);
-box-shadow: 0px 0px 105px 24px rgba(45,255,196,0.9);
+-webkit-box-shadow:0px 0px 105px 24px rgba(13,192,224,0.9);
+-moz-box-shadow: 0px 0px 105px 24px rgba(13,192,224,0.9);
+box-shadow: 0px 0px 105px 24px rgba(13,192,224,0.9);
 }
