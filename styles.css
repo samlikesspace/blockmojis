@@ -1,4 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Oi&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.cdnfonts.com/css/minecraft-4');
+@import url('https://fonts.googleapis.com/css2?family=SN+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+
+* { font-family: 'SN Pro'; }
 
 body {
   background: #f7f5e5;
@@ -17,6 +20,7 @@ footer {
   font-size: 25px;
   color: #0dc0e0;
   font-weight: 1000;
+  font-family: 'Minecraft'
 }
 
 footer button { justify-content: flex-end; }
