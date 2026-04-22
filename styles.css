@@ -15,9 +15,9 @@ footer {
   bottom: 0;
   padding: 15px;
   display: flex;
-  align-items: flex-end;
+  align-items: center;
   text-align: left;
-  jutify-content: center;
+  jutify-content: flex-end;
   font-size: 25px;
   color: #0dc0e0;
   font-weight: 400;
