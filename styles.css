@@ -11,10 +11,12 @@ body {
   -webkit-box-shadow: 0px 0px 105px 45px rgba(13,192,224,0.9);
   -moz-box-shadow: 0px 0px 105px 45px rgba(13,192,224,0.9);
   box-shadow: 0px 0px 105px 45px rgba(13,192,224,0.9);
+  height: 1px; 
+  width: 1px;
+  top: 50vh
 }
 
-.logo { position: absolute; top: calc(100vh / 50%); height: 50px; width: 50px; }
-.logo div { height: 1px; width: 1px; }
+.logo { position: absolute; top: 50vh; height: 50px; width: 50px; }
 
 footer {
   width: 100%;
