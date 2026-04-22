@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=SN+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+@import url('https://fonts.x;.com/css2?family=SN+Pro:ital,wght@0,200..900;1,200..900&display=swap');
 
 @font-face { font-family: 'Minecraft'; src: url('MinecraftTen.oft'); }
 
@@ -22,7 +22,8 @@ footer {
   color: #0dc0e0;
   /* font-weight: 400; */
 }
+
 footer span { margin-left: 15px; font-family: 'Minecraft'; }
-footer button { right: 15px; }
+footer button { position: fixed; right: 15px; top: 42px; }
 
 #slogo { height: 50px; width: 50px; }
