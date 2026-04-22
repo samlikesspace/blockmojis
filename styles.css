@@ -20,7 +20,7 @@ footer {
   font-size: 25px;
   color: #0dc0e0;
   font-weight: 1000;
-  font-family: 'Minecraft';
+  font-family: 'Minecraft', sans-serif;
 }
 
 footer button { justify-content: flex-end; }
